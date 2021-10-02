@@ -7,7 +7,7 @@ public class Main {
         int rpta = binarySearch(arr, 0, sup, x);
 
         if (rpta != -1) {
-            System.out.println("Encontrado en la posición" + rpta);
+            System.out.println("Encontrado en la posición " + rpta);
         } else {
             System.out.println("No encontrado...");
         }
