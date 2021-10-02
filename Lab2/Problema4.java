@@ -2,15 +2,15 @@
 //busqueda(int[]array, int value) busca el value en el array
 //crear Array(int cantidad), crea los valores del array de acuerdo a la cantidad
 //imprimir(int[]array) imprime el array
-public class Ejercicio1 {
+public class Main {
 
     public static void main(String[] args) {
         int[] array = crearArray(10000);
-        double inicio = System.currentTimeMillis();
+        double inicio = System.nanoTime();
         imprimir(array);
         System.out.println("Se encuentra 15? " + busqueda(array, 15));
-        double fin = System.currentTimeMillis();
-        System.out.println("Se demoró: " + (fin - inicio) + " milisegundos");
+        double fin = System.nanoTime();
+        System.out.println("Se demoró: " + (fin - inicio) + " nanosegundos");
     }
 
     public static boolean busqueda(int[] array, int n) {
