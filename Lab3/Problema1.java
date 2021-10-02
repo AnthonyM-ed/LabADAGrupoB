@@ -14,15 +14,17 @@ public class Main {
     }
 
     public static int binarySearch(int arr[], int inf, int sup, int x) {
+        int medio;
         if (sup >= inf) {
-            int mid = inf + sup / 2;
-            if (arr[mid] == x) {
-                return mid;
+            medio = (inf + sup) / 2;
+            if (arr[medio] == x) {
+                return medio + 1;
+            } else if (arr[medio] < x) {
+                return binarySearch(arr, medio + 1, sup, x);
+            } else {
+                return binarySearch(arr, inf, medio - 1, x);
             }
-            if (arr[mid] > x) {
-                return binarySearch(arr, inf, mid - 1, x);
-            }
-            return binarySearch(arr, mid + 1, sup, x);
+
         }
         return -1;
     }
