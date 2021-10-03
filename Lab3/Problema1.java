@@ -1,3 +1,6 @@
+//Problema 1
+//binarySearch(int arr[], int inf, int sup, int x) buscar el valor x 
+//dentro del array usando la busqueda binaria
 public class Main {
 
     public static void main(String[] args) {
