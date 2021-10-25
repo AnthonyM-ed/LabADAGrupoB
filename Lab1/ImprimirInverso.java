@@ -1,4 +1,4 @@
-//Problema 2
+//Problema 2: imprimir los numeros de manera inversa
 class Main {
   public static void main(String[] args) {
     int[] numbers = {1, 2, 3, 4};
