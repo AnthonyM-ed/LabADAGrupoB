@@ -8,4 +8,8 @@ public class Q9 {
         }
     }
 }
+// Condition       i * i < n
+// To finish       i * i >= n
+// We assume that     i^2 = n
+//                      i = sqrt(n)
 //O(sqrt(n))
